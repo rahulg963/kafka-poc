@@ -36,7 +36,7 @@ list topics
 produce message
 	kafka-console-producer --broker-list localhost:9092 --topic my_topic
 consumer message
-	kafka-console-consumer --bootstrap-server localhost:9092 --topic my_topic --from-beginning
+	kafka-console-consumer --bootstrap-server localhost:9092 --from-beginning --topic my_topic
 describe
 	kafka-topics --describe --topic my_topic --zookeeper localhost:2181
 delete topic
